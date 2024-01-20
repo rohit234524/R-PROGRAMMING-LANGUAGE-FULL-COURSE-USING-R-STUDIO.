@@ -1,0 +1,1813 @@
+##Start R Language full Course.
+
+print("Rohit Kumar")
+a<-25
+b<-5
+sum<-a+b
+print("Rohit Vaishali")
+name<-"Rohit"
+lname<-"Kumar"
+print(name+lname)
+ 
+#This is a comment.
+demo2<-3+6
+sessionInfo()
+
+a<-2:15
+plot(a)
+b=23
+B=25
+sum<-b+B
+sum
+
+##Variables in R Programming.
+var_name<-33 #valid Variable
+var1.name<-17
+.var_name<-21.3
+var3_name<-"Rohit Satya"
+
+_var_name<-10 # Not Valid Variable.
+5var_var<-5
+
+#Assignment  Of Variable.
+var<-10
+var1=10
+20>-var2
+cat(var," ",var1,"\n",var2)
+cat(var,"Rohit-Yadav-Vaishali ",var1,"\n",var2)
+
+
+
+##Data Types in R
+##logical,numeric,integer,complex,character,raw
+##numeric=12.34,-24.345,-26.456
+##integer=36l
+##complex=5+2i
+#logical=TRUE,FALSE
+##Character='a',"hello R","False","Hello R 56.155#2@"
+
+
+num<-10
+class(num)
+typeof(num)
+
+num1=as.numeric(num)
+num1
+typeof(num)
+
+
+int<-12
+int1<-as.integer(int)
+typeof(int1)
+int1
+
+int2<-12L
+typeof(int2)
+
+com<-5-4i
+class(com)
+com
+
+logi<-3
+class(logi)
+
+
+logi<-TRUE
+class(logi)
+logi
+
+char<-"WsCubeTech123"
+class(char)
+typeof(class)
+char
+
+##Conversing Data Types in R
+
+num1<-as.numeric(26L)
+num1
+
+num2<-as.numeric(25-56i)
+num2
+
+num3<-as.numeric("wscubetech123")
+num3
+
+num4<-as.numeric("456123")
+num4
+
+num5<-as.numeric(TRUE)
+num5
+
+
+num1<-as.integer(26.6544)
+num1
+class(num1)
+
+num2<-as.integer(45L)
+num2
+
+num3<-as.integer(67-78i)
+num3
+
+num4<-as.integer(67-78i)
+num4
+
+num5<-as.integer(TRUE)
+num5
+
+num6<-as.integer("1234uy")
+num6
+
+num7<-as.integer("16789")
+num7
+
+com1<-as.complex(562.4556)
+com1
+
+com2<-as.complex(56L)
+com2
+
+com3<-as.complex(FALSE)
+com3
+class(com3)
+
+
+com4<-as.complex("234")
+com4
+
+com5<-as.complex("12ert33")
+com5
+
+log1<-as.logical(0)
+log1
+
+
+log2<-as.logical(3)
+log2
+
+
+log3<-as.logical("we2")
+log3
+
+log4<-as.logical("123")
+log4
+class(log4)
+
+
+log5<-as.logical(0+5i)
+log5
+
+log5<-as.logical(0+0i)
+log5
+
+char1<-as.character(45.345)
+char1
+
+char2<-as.character(45L)
+char2
+
+
+char3<-as.character("12345qw")
+char3
+
+char4<-as.character("13")
+char4
+
+char5<-as.character(54-89i)
+char5
+
+char6<-as.character(TRUE)
+char6
+
+
+x<-1:10;
+plot(x)
+class(x)
+
+## Operators in R
+## Arithematic operator=+,-,*,/,%%%,%/%, ^
+##Relational = <  > == <= >= != #output-True and False.
+##Logical = & | ! && ||
+##Assignment= <- -> <<-  ->>
+
+a<-7.5
+b<-2
+print(a+b)#Addition
+print(a-b)#Substraction
+print(a*b)#Multiplication
+print(a/b)#Division
+print(a%%b)#Reminder
+print(a%/%b)#Quotient
+print(a^b)#Power of
+
+
+c1<-c(8,9,6)
+c2<-c(2,4,5)
+print(c1+c2)#Addition
+print(c1-c2)#Substraction
+print(c1*c2)#Multiplication
+print(c1/c2)#Division
+print(c1%%c2)#Reminder
+print(c1%/%c2)#Quotient
+print(c1^c2)#Power of
+
+
+print(a<b)#Addition
+print(a>b)#Substraction
+print(a==b)#Multiplication
+print(a<=b)#Division
+print(a>=b)#Reminder
+print(a!=b)#Quotient
+
+
+c1<-c(8,9,6)
+c2<-c(2,4,5)
+print(c1<c2)#Addition
+print(c1>c2)#Substraction
+print(c1==c2)#Multiplication
+print(c1<=c2)#Division
+print(c1>=c2)#Reminder
+print(c1!=c2)#Quotient
+
+
+d<-c(3.4,TRUE,2+4i)
+d1<-c(0,TRUE,6-5i)
+print(d&d1)
+print(a&&b)
+print(a&b)
+print(a|b)
+print(a||b)
+
+
+print(!a)
+
+c<-2
+d<<-3
+e=4
+f->5
+#g->>6
+cat(c," ",d," ",e," ",f)
+
+
+## R If-Else Statement.
+x<-25L
+if(is.integer(x)){
+  print("X is integer Number")
+}
+
+x<-25
+if(is.integer(x)){
+  print("X is integer Number")
+}else
+{
+  print("X is not integer")
+}
+
+
+y<-c("Hardwork","is","the","Key","of","Sucess")
+y
+if("Key" %in% y){
+  print("Key is Found in our vector")
+}else{
+  print("Key is Not Found in our vector")
+}
+
+y<-c("Hardwork","is","the","Key","of","Sucess")
+y
+if("ram" %in% y){
+  print("Key is Found in our vector")
+}else{
+  print("Key is Not Found in our vector")
+}
+
+
+marks<-78
+if(marks>75){
+  print("First Class")
+}else if(marks>65){
+  print("Second Class")
+}else if(marks>45){
+  print("Third Class")
+}else{
+  print("Fail")
+}
+
+
+#R Switch Case
+#Switch(expression,case1,case2....)
+##Index Value Base Question
+x<-switch(2,"Ram","Mohan","Vaishali","Sita")
+print(x)
+
+
+x1<-switch(4,"Ram","Mohan","Vaishali","Sita")
+print(x1)
+
+x2<-switch(7,"Ram","Mohan","Vaishali","Sita")
+print(x2)
+
+
+## Maching Value Base Question
+
+y<-"20"
+x<-switch(y,"4"="Ram","14"="Shayam",
+          "20"="Mohan","25"="Sita")
+print(x)
+
+
+y<-"4"
+x<-switch(y,"4"="Ram","14"="Shayam",
+          "20"="Mohan","25"="Sita")
+print(x)
+
+#R next and break
+x<-1:10
+for(val in x){
+  if(val==5){
+    next
+    
+  }
+  print(val)
+}
+
+
+a<-1;
+repeat{
+  print("Hello R")
+    if(a>=5){
+      break
+    }
+  a=a+1
+}
+
+# R For loop
+for (y in 1:10){
+  print(y)
+}
+
+
+for (y in 1:10){
+  print(paste("Number: ",y))
+}
+
+
+f<-c("Orange","Mango","banana","graps")
+for(i in f){
+  print(f)
+}
+
+f<-c("Orange","Mango","banana","graps")
+for(i in f){
+  print(i)
+}
+
+#R repeat loop
+v<-c("hello","how","are","you")
+x<-2
+repeat{
+  print(v)
+  x<-x+1
+  if(x>=5){
+    break
+  }
+  
+}
+
+
+#R While loop
+v<-c("hello","r","Programming","Language")
+x<-2
+while(x<6){
+  print(v)
+  x<-x+1
+}
+
+
+#R Take input from user.
+name<-readline(prompt="Enter the name:")
+#name<-as.character(name)
+age<-readline(prompt="Enter your age=")
+int<-as.integer(age)
+class(int)
+typeof(int)
+print(paste("Hello my name is:",name,"and my age is ",age))
+
+if(name=="rahul"){
+  print("Your adress is: Vaishali")
+}else{
+  print("invalid name and age")
+}
+
+
+# Paste=use of concatenate of string.
+#seprator=separate the values any string.
+
+paste("Rohit","Satya","Sajan",sep="-=-")
+paste("Rohit","Satya","Sajan",sep="*")
+
+#paste0 in no add for seprator(space).
+#paste bidefault add space.
+
+paste0("Rohit","sohan","deepak")
+
+
+# R Function.
+#setup statement for create a specific Tasks is called Function.
+
+#Syntax of Function.
+#First(Function_name)<-second(Function(argument1,arg2,ag3...)
+#third{Function code(fnction body)}
+
+
+new.function<-function(){
+  for(n in 1:5){
+    print(n^2)
+  }
+}
+new.function()
+
+
+new.function<-function(x,y,z){
+  add<-x+y+z
+  print(add)
+}
+new.function(4,5,6)
+
+
+new.function<-function(x,y,z){
+  add<-x+y+z
+  print(add)
+}
+new.function(x=4,y=5,z=6)
+
+
+#R Built-in Functions
+print(abs(-5))
+x<--4
+print(abs(x))
+
+print(sqrt(4))
+print(ceiling(5.3))
+print(ceiling(9.4))
+print(floor(5.8))
+
+y<-c(2.3,7.8,4.5)# float to integer value change.
+print(trunc(y))
+
+
+z<-0
+print(sin(z))
+print(sin(90))
+print(cos(60))
+print(tan(90))
+
+print(log(10))
+print(exp(9))
+
+
+a<-"123aer34525"
+substr(a,3,3)
+substr(a,3,5)
+substr(a,3,6)
+
+
+s1<-"ROHIT RAJ"
+print(tolower(s1))
+
+s2<-"rohit raj"
+print(toupper(s2))
+
+sessionInfo()
+help.search("data output")
+
+
+s3<-c("abc","123ser","abc123","123abc")
+search<-"abc"
+print(grep(search,s3))
+
+name<-c("Rohit1","vikash","anjali","satyam")
+serch<-"Rohit"
+print(grep(search,name))
+
+
+a<-c(0:15,40)
+a
+su<-sum(a)
+print(su)
+
+a1<-c(0:5,25)
+som<-sum(a1)
+print(som)
+
+b<-c(20,30,40,50)
+print(max(b))
+print(min(b))
+
+#Data Structure in R
+
+##Vectors
+#Matrix
+#Array
+#List
+#Data Frames
+
+#All the element of vector are known as Components.
+#length(): no of elements in vectors.
+#Atomic vector AND list.
+
+#How we create vector.
+a<-c(3,4,5,1,5,7)# 1.c function use.
+a
+b<-3:5 # 2.Use of colon Oprator.
+b
+
+sq<-seq(1,5)# 3.Use sequence Variable.
+sq
+
+sq1<-seq(1,5,by=0.5)
+sq1
+
+
+sq2<-seq(1,5,length.out=0.5)
+sq2
+
+
+sq3<-seq(1,4,length.out=5)
+sq3
+
+#Atomic Vector.
+##Numeric vector.
+numv<-c(12.35,52.6,45,89.2,32.5)
+numv
+class(numv)
+
+##Integer Vector.
+intv<-c(1,2,3,4)
+int1<as.integer(intv)
+class(int1)
+
+int2<-c(1L,2L,3L,4L)
+int2
+class(int2)
+
+
+##Character Vector.
+charv<-c(1,2,3,45,6)
+charv<-as.character(charv)
+class(charv)
+charv
+
+##Logical Vector.
+logv<-c(1,2,5,6,0)
+logv<-as.logical(logv)
+logv
+class(logv)
+
+
+#Accessing elements of Vector.
+#By Indexing[]
+#indexing Start from 1 not 0.
+
+logv[3]
+charv[4]
+
+char_vec<-c("Ram"=12,"Shayam"=32,"Mohan"=31)
+char_vec["Shayam"]
+
+
+a1<-c(1,3,5,7,9)
+a1[c(TRUE,FALSE,FALSE,TRUE,TRUE)]
+
+
+#Vector Operations.
+a1<-c(1,2,3,4,5)
+name<-c("Ram","Mohan","Sohan","Satya","Sunita")
+a3<-c(a1,name)
+a3
+
+
+a1<-c(1,2,3,4,5)
+a4<-c(6,7,8,9,10)
+name<-c("Ram","Mohan","Sohan","Satya")
+a3<-c(a1,name)
+a3
+a1+a4
+a1-a4
+
+
+name<-c("Ram","Mohan","Sohan","Satya")
+name[3]
+name[7]
+name[-2]#Change Absolute value.
+name[2:4]
+name[c(2,3,4)]
+
+
+#Naming of vector
+z<-c("ram","vaishali","sohan")
+z
+names(z)=c("y1","y2","y3")
+z
+z["y1"]
+
+# R List.
+##list is a collection of different type of value.
+#Any List Not proform by Arithamatic Operation.so change vector.
+#c() list create.
+
+vec<-c(8,9,4,7,6)
+char_vec<-c("ram","Rohan","Satya","Sohan","Deepak")
+logic_vec<-c(TRUE,FALSE,FALSE,TRUE,FALSE)
+list1<-list(vec,char_vec,logic_vec)
+list1
+
+list2<-list("ram","mohan",c(1,2,3,4,5),TRUE,FALSE,52L,56.85)
+list2
+
+
+list3<-list("Satya","Vikas",3,4,5,TRUE,23L,45.3)
+list3
+
+
+#Naming of List.
+list4<-list(c("ram","mohan","sohan"),c(56,89,78),list("Btech","Mtech","Bca"))
+list4
+
+list4<-list(c("ram","mohan","sohan","sunita","Rekha","Anuska","Rakesh","Ananya"),c(56,89,78),list("Btech","Mtech","Bca"))
+list4
+
+names(list4)<-c("Student","Marks","Course")
+list4
+
+list5<-list(c("Rohit","Sohan"),c(45,60),"Btech","Mtech")
+list5
+names(list5)<-c("Name","Cost","Course")
+list5
+
+
+list6<-list(c("Rohit","Sohan","Anuska"),c(45,60),list("Btech","Mtech","Bca"))
+list6
+names(list6)<-c("Name","Cost","Course")
+list6
+
+#Accessing list.
+print(list4[1])
+print(list4["Marks"])
+print(list4$Course)
+print(list5$Course)
+
+print(list6$Marks)
+print(list6$Cost)
+class(list5)
+typeof(list5)
+
+
+#Any List Not proform by Arithamatic Operation.so change vector.
+
+# unlist() converts the list into vector.
+
+list7<-list(4:8)
+list7
+class(list7)
+typeof(list7)
+list8<-list(1:5)
+list8
+class(list8)
+typeof(list8)
+
+v1<-unlist(list7)
+v1
+class(v1)
+typeof(v1)
+v2<-unlist(list8)
+v2
+class(v2)
+typeof(v2)
+
+#Merge of list.
+mer<-list(list7,list4)
+mer
+
+mer1<-list(list7,list8)
+mer1
+res<-v1+v2
+res
+
+#R Vector Function.
+#rep() //rep function.
+rep(c(2,3,4),time=3)
+rep(c(2,3,4),each=5)
+rep(c(4,5),time=(c(3,4)))
+rep(1:4,length.out=8)
+
+
+#seq() //Sequence function.
+seq(from=3.5,to=1.5,by=-.5)
+seq(from=-3.5,to=2.8,length.out=10)
+
+
+#any() and all() //any function and all function.
+x<-1:10
+any(x>5)
+any(x>15)
+
+all(x>5)
+all(x>0)
+
+
+##R Arrays
+
+#arrays are the data objects which allow us to
+#Store data in more than two dimension.
+#Array(2,3,4)
+#array_name<-array(data,dim=())
+
+v1<-c(1,4,5)
+v2<-c(10,20,30,40,50,60,70,80)
+v3<-array(c(v1,v2),dim=c(3,3,2))
+print(v3)
+
+v1<-c(1,4,5)
+v2<-c(10,20,30,40,50,60,70,80)
+row_name<-c("r1","r2","r3")
+col_name<-c("c1","c2","c3")
+mat_name<-c("mat1","mat2","mat3","mat4")
+v3<-array(c(v1,v2),dim=c(3,3,4),dimnames=list(row_name,col_name,mat_name))
+print(v3)
+
+
+print(v3[3,,1])
+print(v3[3,2,1])
+print(v3[2,2,4])
+print(v3[,3,3])
+print(v3[,,2])
+
+
+v2<-c(1,2,3)
+v3<-c(4,5,6,7,8,9)
+v4<-array(c(v2,v3),dim=c(3,3,2))
+v4
+
+v5<-c(10,11,12)
+v6<-c(13,14,15,16,17,18)
+v7<-array(c(v5,v6),dim=c(3,3,2))
+v7
+
+v8<-v4+v7
+v8
+v9<-v4-v7
+v9
+
+#R Matrix.
+mat<-matrix(c(1:16),nrow=4,byrow=FALSE)
+mat
+mat1<-matrix(c(1:12),nrow=3,ncol=4,byrow=TRUE)
+mat1
+
+row_name<-c("r1","r2","r3")
+col_name<-c("c1","c2","c3","c4")
+mat_name<-c("mat")
+mat2<-matrix(c(1:12),nrow=3,ncol=4,byrow=FALSE,dimnames = list(row_name,col_name))
+mat2
+
+print(mat2[3,])
+print(mat2[,2])
+print(mat2[1,2])
+
+#change Matrix Value.
+mat2[1,2]<-0
+mat2
+mat2[mat2==11]<-5
+mat2
+
+mat2[mat2<=11]<-0
+mat2
+
+#Add row and Column in matrix used  rbind() and cbind() function.
+rbind(mat2,c(1,2,3,4))
+mat2
+cbind(mat2,c(2,3,4))
+
+mat3<-matrix(c(1:16),nrow=4,byrow=TRUE)
+mat3
+
+#Transpose of Matrix.
+t(mat3)
+
+mat4<-matrix(c(1:12),nrow=4,ncol=3,byrow = TRUE)
+mat4
+
+mat5<-matrix(c(13:24),nrow=4,ncol=3,byrow = TRUE)
+mat5
+
+mat6<-mat4*mat5
+mat6
+
+#Data Frame.
+#(Creating the data frame.
+
+emp.data<-data.frame(
+  employee_id=c(1:5),#,(comma) use separate Dataframe.
+  employee_name=c("Ram","Vikash","Vishal","Rohit","Prakash"),
+  sal=c(523.0,910.2,510,630.0,453.60),
+  Starting_date=c("2002-10-15","2004-03-23","2000-10-19","1996-09-14","1996-12-20"),
+  Adress=c("Vaishali","Jodhpur","Patna","Delhi","Mumbai"),
+  
+  stringsAsFactors = FALSE
+  
+)
+#Printing the data frame.
+print(emp.data)
+
+
+cust<-data.frame(
+  employee_id=c(1:4),#,(comma) use separate Dataframe.
+  employee_name=c("Ram","Vikash","Vishal","Rohit"),
+  sal=c(523.0,910.2,510,630.0),
+  Starting_date=c("2002-10-15","2004-03-23","2000-10-19","1996-09-14"),
+  Adress=c("Vaishali","Jodhpur","Patna","Delhi"),
+  
+  stringsAsFactors = FALSE
+  
+)
+#Printing the data frame.
+print(cust)
+str(cust)#Structure show
+
+#Data Extract.(column data).
+f1<-data.frame(cust$employee_id,cust$employee_name)
+f1
+
+#Data Extract.(Row data).
+f2<-cust[2,]
+f2
+
+#Data Extract.(Row data(range.)).
+f3<-cust[2:4,]
+f3
+
+f4<-cust[,1]
+f4
+
+f5<-cust[,1:5]
+f5
+
+f6<-cust[c(2,3)]#Total row and 2,3 column data show.
+f6
+
+f7<-cust[c(2,3),c(1,5)]#2,3 row and 1,5 column data show.
+f7
+
+f8<-cust[2,3]#2 row and 3 Column Data show.
+f8
+
+cust
+
+#Row and Column Data add in DataFrame.
+x<-list(5,"manish",1500.20,"1992-10-26","Chennai")
+rbind(cust,x)
+
+y<-c("egg","chiken","roll","Bread")
+cbind(cust,Eating=y)
+
+
+#Row data Delete Data.
+cust<-cust[-2,]
+cust
+
+
+#Column Data delete.
+cust$Starting_date<-NULL
+cust
+
+#Summary Data Show.
+print(summary(cust))
+
+
+#R FACTOR.
+dir<-c("north","west","east","north")
+dir
+is.factor(dir)
+factor(dir)
+
+#Levels 
+# Levels is a alternate name.
+
+factor(dir,levels=c("north","west","east","south"),labels=c("N","W","E","S"))#All data print
+
+factor(dir,levels=c("north","west","east","south"),exclude="north")
+
+#Factor Levels generate Function.
+# gl()function.(gl function in give three Argument pass(n,k,labels))
+
+v1<-gl(3,2,labels=c("Ram","Mohan","sohan"))
+v1
+
+v1<-gl(3,5,labels=c("Ram","Mohan","sohan"))
+v1
+
+dir<-c("north","west","east","north")
+data<-factor(dir)
+data
+data[3]
+
+data[2]
+
+data[c(2,3)]
+
+data[c(2,4)]
+data[-1]#First value chhorkar print data.
+
+
+#Modify factor element.
+data[2]<-"east"
+data
+
+#Factor function name.
+#is.factor()
+#is.ordered()
+#as.factor()
+#as.ordered()
+
+
+#Data Importing CSV.
+#R csv File Import.
+getwd()
+setwd("C:/Users/Rohit/OneDrive/Documents/R Programing Script")#Change working Directory.
+
+v<-c(12,19,10,13,26,55,23,60)
+v
+sort(v)#Bi-defalt decending order.
+sort(v,decreasing = T)
+
+
+order(v)
+
+v[order(v)]
+v
+
+rank(v)
+
+
+v[rank(v)]
+
+
+stores<-read.csv("stores.csv")#Current working directory in file save.
+
+View(stores)
+print(is.data.frame(stores))
+
+
+print(nrow(stores))
+print(ncol(stores))
+
+stores1<-read.csv("C:\Users\Rohit\OneDrive\Documents\stores")
+stores1
+
+stores2<-read.table(file="salary51.csv",header = T,sep=",")
+stores2
+
+View(stores2)
+print(nrow(stores2))
+print(ncol(stores2))
+
+
+# Imporatant Function related to the dataframe.
+View(stores2)
+fix(stores2)
+str(stores2)
+summary(stores2)
+
+
+names(stores2)
+nrow(stores2)
+ncol(stores2)
+
+length(stores2)#Column return.
+
+dim(stores2)#dimension return row and column.
+colnames(stores2)
+
+
+head(stores2)
+tail(stores2)
+
+names(stores)
+
+stores3<-stores[c(1:3,6,4:5)]
+names(stores3)
+
+fix(stores3)
+
+stores4<-stores2[c(1:10),]
+View(stores4)
+
+stores5<-stores[c(1:35),c(1:2)]
+View(stores5)
+
+stores6<-stores2[,c(1:4)]
+View(stores6)
+
+fix(stores4);
+fix(stores)
+
+View(stores)
+
+names(stores)
+grep("sex",colnames(stores))#particular position in a column in dataframe.
+grep("rank",colnames(stores))
+
+#Manupulation of data fram.
+d1<-stores$sex
+d1
+fix(stores)
+View(stores)
+
+stores$Totalservice=stores$phd*stores$service+stores$salary
+View(stores)
+
+
+#View(stores$Totalservice)
+stores["Totalservice"]
+dim(stores)
+
+names(stores)
+max_ser<-max(stores$service)
+max_ser
+
+
+min_ser<-min(stores$service)
+min_ser
+
+
+
+
+
+#max_tot<-max(stores$Totalservice)
+#max_tot
+
+min<-min(stores$Totalservice)
+min
+
+max_tot<-max(stores$phd)
+print(max_tot)
+
+details<-subset(stores,Totalservice==max(Totalservice))
+details
+
+
+detail<-subset(stores,service==max(service))
+detail
+
+
+detail01<-subset(stores,sex=="Male")
+print(detail01)
+
+
+detail02<-subset(stores,sex=="Female")
+print(detail02)
+
+
+detail02<-subset(stores,sex=="Female"&service==19)
+print(detail02)
+
+
+detail03<-subset(stores,sex=="Female"&phd>29)
+print(detail03)
+
+
+detail03<-subset(stores,sex=="Female"&phd>29)
+print(detail03)
+
+detail03<-subset(stores,sex=="Male"&phd>29)
+print(detail03)
+
+
+demo<write.csv(stores2,"TABLE")
+print("Successfuly Write in csv file.")
+demo
+View(stores2)
+fix(demo)
+
+
+# R In Excel File.
+install.packages("xlsx")
+
+any(grep("xlsx",installed.packages()))#Check package install or not install.
+
+library("xlsx")
+data3<-read.xlsx("salary51.xlsx",sheetIndex = 1)
+print(data3)
+
+View(data3)
+
+
+data5<-read.xlsx("Vaishali.xlsx",sheetIndex = 1)
+print(data5)
+View(data5)
+fix(data5)
+getwd()
+
+
+data6<-read.xlsx("EXCEL BASIC CONCEPT.xlsx",sheetIndex = 1)
+print(data56)
+View(data6) #Because not save the current working directory file.
+
+
+names(data5)
+nrow(data5)
+dim(data5)
+
+length(data5)
+colnames(data5)
+names(data3)
+summary(data5)
+
+max_service<-max(data3$service)
+max_service
+any(grep())
+
+min_service<-min(data3$service)
+min_service
+
+print(data3$service)
+print(data5$service)
+print(data5$NA.)
+
+a<-subset(data3,service==49)
+a
+b<-subset(data3,sex=="Male")
+b
+
+c<-subset(data3,phd>30)
+c
+
+d<-subset(data3,phd>30|sex=="Male")
+d
+
+e<-subset(data3,phd>30&sex=="Male")
+e
+
+fix(e)
+View(b)
+
+head(e)
+tail(e)
+
+# Dataframe Manupulation work Proform dplyr package.
+install.packages("dplyr")
+library("dplyr")
+any(grep("dplyr",installed.packages()))
+
+data6<-read.csv("Stores.csv")
+data6
+
+names(data6)
+testd<-select(data6,rank,service)#select column use select(dataframename,columnname)
+testd
+fix(testd)
+print(sum(stores$service))
+
+
+test1<-select(data6,-rank)
+test1
+
+head<-select(data6,rank:sex)
+head
+
+
+head(select(data6,rank:sex))
+
+head1<-select(data6,starts_with("d"))
+head1
+
+View(data6)
+
+names(data6)
+filter(data6,sex=="Male")
+
+
+gym<-subset(data6,service>45)
+gym
+
+filter(data6,phd>=20)
+
+filter(data6,service>=45,phd>=45)
+
+filter(stores,sex %in%c("Male"))
+stores
+
+
+# %>% Pipe oprator.
+head(select(stores,sex,discipline))
+
+fix(data6)
+View(data6)
+
+install.packages("magrittr")
+library("magrittr")
+
+
+data6 %>% select(rank,service)#Use Pipe oprator(%>%).
+data6 %>% select(discipline,phd,salary)%>% head
+
+
+data6 %>% select(discipline,phd,salary)%>% tail
+data6 %>% head %>% select(rank,sex,phd)
+
+head %>% data6 %>% select(rank,sex,phd)
+head %>% select(rank,sex,phd) %>% data6 #Not (Valid) Opration proform on head function(left).left side only dataframe use.
+
+
+#Arrange function.
+data6 %>% arrange(rank)
+stores %>% arrange(discipline) %>% head
+arrange(head(select(stores,discipline)))#Not apply arrange function.
+
+
+data6 %>%
+  select(rank,discipline,sex) %>%
+  arrange(discipline,sex) %>%
+  head
+
+
+stores %>%
+  select(rank,discipline,sex) %>%
+  arrange(discipline,sex) %>%
+  head
+
+
+stores3 %>%
+  select(rank,phd,service) %>%
+  arrange(phd,service) %>%
+head
+
+fix(stores3)
+View(data6)
+
+
+stores3 %>%
+  select(rank,phd,service) %>%
+  arrange(phd,service) %>%
+  filter(phd>=45) 
+
+
+stores3 %>%
+  select(rank,phd,service) %>%
+  arrange(phd,service) %>%
+  filter(phd>=45) %>% head
+
+
+head(stores3 %>%
+  select(rank,phd,service) %>%
+  arrange(phd,service) %>%
+  filter(phd>=45))
+
+
+head(stores3 %>%
+       select(rank,phd,service) %>%
+       arrange(phd,service) %>%
+       filter(phd>=45) %>% head)
+
+dim(data6)
+
+names(data6)
+data6 %>% mutate(tot_phdser=phd+service)
+data6<-data6 %>% mutate(tot_phdser=phd+service)
+
+data6(c(1:3),6,4:5)
+names(data6)
+fix(data6)
+
+data6 %>% mutate(tot_phdser=phd+service)%>% head
+
+data6 %>% mutate(tot_phdser=phd+service)%>% tail
+
+
+data7<-group_by(data6,rank)
+data7
+View(data7)
+fix(data7)
+
+
+data6 %>% group_by(rank)
+data6 %>% group_by(sex)
+data6 %>% group_by(phd) %>% head
+
+
+t1<-data6 %>% group_by(phd) %>% tail
+t1
+
+filter(stores,service>=40)%>% head
+
+stores%>%filter(service>=40)%>% head
+
+head2<-select(stores,sex)%>%head
+head2
+fix(head2)
+names(data6)
+
+#Data importing in relational Database.
+install.packages("RMySQL")
+library("RMySQL")
+any(grep("RMySQL",install.packages()))
+any(grep("RMySQL",installed.packages()))
+
+
+data<-dbConnect(MySQL(),
+                username="root",
+                password="",
+                host="localhost",
+                port=,
+                dbname="student"
+)
+data<-dbConnect(MySQL(),
+                username="root",
+                dbname="student")
+
+dbListTables(data)
+
+dbListFields(data,"person")
+
+data1<-dbGetQuery(data,"Select * from person")
+data1
+
+data2<-dbGetQuery(data,"select 8 from city")
+data2
+
+data3<-dbGetQuery(data,"select * from city")
+data3
+
+data4<-dbGetQuery(data,"select * from course")
+data4
+
+View(data1)
+fix(data1)
+
+
+d1<-dbSendQuery(data,"select * from person")
+d1
+
+data8<-fetch(d1,n=-1)#all row return(n=-1).
+data8
+
+d2<-dbSendQuery(data,"select * from personal")
+d2
+data9<-fetch(d2,n=4)#4 row return(n=4).
+data9
+View(data9)
+
+dbListFields(data,"personal")
+
+
+
+
+#Creating Data From Graph.
+x<-c(10,12,45,67,80)
+labels<-c("Bhutan","Nepal","Srilanka","India","America")
+pie(x,labels)
+pie(x,labels,main = "5 Country data show(pie chart).",col=rainbow(length(x)))
+colors<-c("red","blue","yellow","green","white")
+pie(x,labels,main = "5 Country data show(pie chart).",col=colors)
+
+
+legend("topright",c("Bhutan","Nepal","Srilanka","India","America"),cex=0.8,fill=colors)
+legend("topright",c("Bhutan","Nepal","Srilanka","India","America"),cex=0.8,fill=colors,col="red",bg="green")
+
+#Pie3D
+install.packages("plotrix")
+library("plotrix")
+x1<-c(20,25,67,85)
+lables2<-c("Bhutan","Nepal","Uk","Usa")
+pie3D(x1,labelslabels=labels2,explode=0.2,main="Country Pie Chart")
+
+pie3D(x1,labels=labels2,explode=0.4,main="Country Pie Chart")
+
+pie3D(x1,labels2=labels2,main="Country Pie Chart")
+
+pie3D(x1,labels=labels2,main="Country Data.")
+
+pie3D(x1,labels=labels2,explode=0.5,main="Country Data.")
+
+x2<-c(20,25,67,85)
+lables2<-c("Bhutan","Nepal","Uk","Usa")
+pie_percent<-round(100*x2/sum(x),1)
+pie3D(x2,labels2=pie_percent,main="Country pie Chart.",explode=0.2,col=rainbow(length(x2)))
+
+
+legend("topright",c("Bhutan","Nepal","Uk","Usa"),cex=0.6,fill=rainbow(length(x1)))
+fix(stores)
+
+
+getwd()
+fix(data8)
+fix(data1)
+
+filter(data6,sex %in% c("Male"))
+fix(data6)
+install.packages("magrittr")
+library("magrittr")
+
+
+getwd()
+#Bar-Chart
+h1<-c(20,23,45,56,86)
+barplot(h1)
+
+h2<-c(83,23,45,56,48)
+barplot(h2)
+
+
+h3<-c(80,12,27,45,67)
+month<-c("Jan","Feb","Mar","Apr","May")
+barplot(h3,names.arg=month,xlab="Month",ylab="Revenue",main="Revenue Bar Chart",col="yellow",border="green")
+
+
+h4<-c(80,12,27,45,67)
+month<-c("Jan","Feb","Mar","Apr","May")
+barplot(h4,names.arg=month,xlab="Month",ylab="Revenue",main="Revenue Bar Chart",col=rainbow(length(h3)),border="green")
+
+
+
+
+h5<-c(80,12,27,45,67)
+month<-c("Jan","Feb","Mar","Apr","May")
+barplot(h5,names.arg=month,xlab="Month",ylab="Revenue",col="green",main="Revenue Bar Chart",border="red")
+
+
+month<-c("Jan","Feb","Mar","Apr","May")
+
+region<-c("West","North","South")
+m1<-array(c(1:15),dim=c(3,3,2))
+m1
+m2<-matrix(c(1:15),nrow=3,ncol=5,byrow = TRUE)
+barplot(m2,main="Total Revenue",names.arg=month,xlab="Month",ylab="Revenue",col=c("red","green","blue"))
+
+
+x<-c(10,23,36,28,67,27,45,57,47,34)
+hist(x,xlab="Weight",ylab="Frequency",col="blue",border="green")
+
+
+# xlim and ylim range number in x axis and y axis.
+hist(x,xlab="Weight",ylab="Frequency",col="yellow",border="blue",xlim = c(0,40),ylim=c(0,5))
+
+hist(x,xlab="Weight",ylab="Frequency",col="yellow",border="blue",xlim = c(0,100),ylim=c(0,5),breaks =3,main="Histogram of Garbase Data" )#breaks ue wirth small size.
+
+v<-c(12,45,23,8,18,34)
+plot(v)
+plot(v,type="p")
+plot(v,type="l")
+plot(v,type="o")
+
+plot(v,type="o",xlab="Month",ylab="Temprature",main="Line Graph of Temprature",col="blue")
+
+
+x<-c(12,34,67,45,89)
+y<-c(34,89,67,56,23)
+z<-c(2,8,90,67,54)
+plot(x,type="o",xlab="Month",ylab="Temprature",col="red")
+lines(y,col="blue",type="o")
+lines(z,type="o",col="green")
+
+
+#R Scatter plot.
+fix(mtcars)
+dim(mtcars)
+View(mtcars)
+names(mtcars)
+colnames(mtcars)
+
+fatch<-mtcars[,c("wt","mpg")]
+fatch
+View(fatch)
+fix(fatch)
+dim(fatch)
+
+
+plot(x=fatch$wt,y=fatch$mpg,xlab="weight",ylab="Milage",
+     xlim = c(2.5,5),ylim=c(15,30),
+     main="Weight v/s Milage",col="blue",type="p")
+
+
+install.packages("ggplot2")
+libraray("ggplot2")
+
+names(mtcars)
+ggplot(mtcars,aes(x=wt,y=mpg)) +geom_point()
+
+ggplot(mtcars,aes(x=log(mpg),y=log(drat)))
++geom_point(aes(color=factor(gear)))
+
+
+View(mtcars)
+boxplot(mtcars$hp)
+fix(mtcars)
+
+
+min<-min(mtcars$hp)
+min
+max<-max(mtcars$hp)
+max
+
+
+str(mtcars)
+summary(mtcars)
+
+
+boxplot(data6$service)
+
+min<-min(data6$service)
+min
+max<-max(data6$service)
+max
+names(data6)
+
+
+boxplot(mtcars$hp,
+        main="mtcars DATA FRAME",
+        xlab="X",
+        ylab="Y",
+        col="Orange",
+        border="Brown",
+        horizontal=T,
+        notch=T
+)
+
+
+
+boxplot(mtcars$hp,
+        main="mtcars DATA FRAME",
+        xlab="X",
+        ylab="Y",
+        col="Orange",
+        border="Brown",
+        horizontal=F,
+        notch=T
+)
+
+
+boxplot(mtcars$hp,
+        main="mtcars Data Frame",
+        xlab="X-axis",
+        ylab="Y-axis",
+        col="blue",
+        border="orange",
+        ylim=c(0,300),
+        horizontal=T,
+        notch = T
+        
+)
+
+row_names<-c("row1","row2","row3","row4")
+col_names<-c("col1","col2","col3","col4")
+mat_names<-c("mat1","mat2","mat3","mat4")
+
+m2<-array(c(1:16),dim=c(4,4,4),dimnames = list(row_names,col_names,mat_names))
+m2
+
+
+# Boxplot form formula.
+# Y~x ,y is a numeric vector which is grouped according to the value of x.
+
+names(mtcars)
+View(mtcars)
+boxplot(mpg~cyl,data=mtcars,xlab="Quantuty of Cylinders",
+        ylab="Miles per Gallon",
+        main="R Boxplot Example",col="orange",border="brown")
+
+boxplot(mpg~cyl,data=mtcars,xlab="Quantuty of Cylinders",
+        ylab="Miles per Gallon",
+        main="R Boxplot Example",col="orange",border="brown",notch=T,horizontal = F)
+
+
+m1<-subset(mtcars,mpg==max(mpg)&cyl==4)
+m1
+
+
+m2<-subset(mtcars,mpg==min(mpg)&cyl==4)
+m2
+
+m2<-subset(mtcars,mpg==min(mpg)&cyl==6)
+m2
+
+m2<-subset(mtcars,mpg==max(mpg)&cyl==6)
+m2
+
+m2<-subset(mtcars,cyl==6)
+summary(m2)
+
+m3<-subset(mtcars,cyl==8)
+summary(m3)
+dim(mtcars)
+
+
+boxplot(mpg~cyl,data=mtcars,
+        xlab="Quantity of Cylinders",
+        ylab="Miles per Galon",
+        main="Boxplot Example",
+        notch=T,
+        col=c("green","yellow","red"),
+        names=c("High","Median","Low"))
+
+
+
+boxplot(age~percentage,data = data8,
+        xlab="Percentage",
+        ylab="age",
+        main="Data Show",
+        notch=TRUE,
+        varwidth=T,
+        col="red")
+
+fix(data8)
+
+
+boxplot(stores$service,main="Service Data Show",col="blue",border="red",notch=T)
+View(stores)
+summary(stores)
+
+
+### Revision Personal Data.
+x<-c(12,24,34,45,70)
+names<-c("Nepal","Bangaladesh","India","uk","Rusia")
+pie(x,names,col=rainbow(length(x)),main="Country Data.",xlab="Row",ylab="column")
+pie(x,names,col=c("green","yellow","white","brown","blue"),main="5 Country Data.",xlab="Red Data",ylab="Green Data")
+legend("topright",cex = 0.2,names,fill=c("green","yellow","white","brown","blue"),bg="green")
+
+
+x1<-c(10,13,34,55,87)
+names1<-c("iran","ejrayal","uk","Usa","Russia")
+pie3D(x1,labelslabes=names1,explode=0.3,main="Country Pie Data")
+
+pie3D(x1,labels=names1,explode=0.3,main="Country Pie Data")
+
+pie3D(x1,labels=names1,explode=0.3,main="Country Pie Data")
+
+pie_percent<-round(100*x1/sum(x1),1)
+
+pie3D(x1,labels=pie_percent,explode=0.3,main="Country data",col=rainbow(length(x)))
+
+pie3D(x1,labels=names1,main="Country Data",explod=0.2,col=c("white","red","blue","green","black"))
+
+legend("topright",names1,cex=0.5,fill=c("white","red","blue","green","black"),bg="white")
+
+
+
+h2<-c(10,23,45,34)
+month<-c("Jan","Feb","March","Apr")
+barplot(h2,names.arg = month,ylab="Revenue",xlab="Month",main="Revenue bar Chart")
+
+barplot(h2,names.arg = month,xlab="Month",ylab="Revenue",main="Revenue Bar Chart",col = rainbow(length(h2)),border="red")
+
+legend("bottom",cex=0.5,month,fill=rainbow(length(h2)))
+
+legend("topright",cex=0.5,month,fill=rainbow(length(h2)))
+
+x2<-c(12,23,45,67,34,56)
+labels<-c("Jan","Feb","Mar","Apr","May","Jun")
+barplot(x2,names.arg=labels,main="Revenue Bar Chart",xlab="Month",ylab="Revenue",col=c("green","white","blue","red","yellow","brown"),border="red")
+legend("topright",labels,cex=0.4,fill=rainbow(length(x2)))
+
+x3<-c(15,34,23,45,56)
+name<-c("Jan","Feb","Mar","Apr","May")
+region<-c("North","West","South")
+m1<-array(c(1:15),dim=c(3,3,2))
+m3<-matrix(c(1:15),nrow=3,ncol=5,byrow = F)
+
+barplot(m3,names.arg=name,main="Revenue Data",xlab = "Month",ylab="Revenue",col=c("red","blue","green"))
+
+
+name1<-c("Jan","Feb","March","Apr")
+regoin<-c("South","West","East","North")
+x4<-matrix(c(1:16),nrow=4,ncol=4,byrow=T)
+barplot(x4,names.arg=name1,main="Revenue Bar Chart",col=c("red","green","blue","yellow"),border="red",ylab="Revenue",xlab="Month")
+
+legend("topright",cex=0.6,regoin,fill=c("red","green","blue","yellow"))
+
+
+x4<-c(10,12,3,40.35,37,56)
+hist(x4,ylab="Frequency",xlab="Domain",col="red",border="green")
+
+x5<-c(12,23,26,34,56)
+hist(x5,main="Histogram Data",xlab="Domain",ylab="Frequency",col=c("red","green","blue","yellow","brown"),border="red",xlim=c(0,40),ylim=c(0,1),breaks =7)
+## legend("topright",x5,fill=c("red","green","blue","yellow","brown"),bg="red")  Not Legends creatd in histogram.
+
+
+data10<-dbConnect(MySQL(),
+                  username="root",
+                  password="",
+                  host="localhost",
+                  port=,
+                  dbname="data"
+)
+
+data10<-dbConnect(MySQL(),
+                 username="root",
+                 dbname="data")
+
+dbListTables(data10)
+dbListFields(data10,"data")
+fix(data10$Name)
+
+data11<-dbGetQuery(data10,"select * from worker")
+data11
+
+data12<-dbGetQuery(data10,"select * from emp")
+data12
+
+x5<-c(12,24,62,58,19)
+plot(x5)
+plot(x5,type="l")
+plot(x5,type="o")
+plot(x5,type="p")
+
+
+x4<-c("Jan","Feb",25,36,45)
+
+x6<-c(12,13,25,36,45)
+
+
+plot(x6,main="Line Chart Graph",xlab="X-axis",ylab="Y-axis",col="red",type = "o")
+
+
+x<-c(12,13,25,36,45)
+y<-c(23,34,45,67)
+z<-c(19,34,45,67,55)
+plot(x,main="Line Chart",xlab="Temparature",ylab="Month",col="red",type="o")
+lines(y,col="blue",type="o")
+lines(z,col="green",type="o")
+
+# legend("topright",x,fill=rainbow(length(x),cex=0.2)).
+
+
+
+
+fatch<-data8[,c("name")]
+fatch
+
+
+
+fix(data8)
+
+d2<-data8[c(1:4),]
+d2
+
+d3<-data8[,c("id","percentage")]
+d3
+fix(d3)
+
+d4<-subset(data8,percentage==67&city==2)
+d4
+fix(d4)
+
+
+
+getwd()
+
+plot(x=mtcars$qsec,y=mtcars$hp,ylab="HP",xlab="QSEC",main="mtcars Data Show",xlim = c(10,25),ylim=c(0,335),col=rainbow(length(x)),type="p")
+
+
+ggplot(mtcars,aes(x=qsec,y=hp))+geom_point()
+
+ggplot(mtcars,aes(x=qsec,y=hp))+
+  geom_point(aes(color=factor(gear)))
+
+
+ggplot(mtcars,aes(x=drat,y=mpg))+
+  geom_point(aes(color=factor(gear)))
+
+
+ggplot(mtcars,aes(x=log(qsec),y=log(hp)))+
+  geom_point(aes(color=factor(gear)))
+
+
+boxplot(mtcars$hp,
+        main="mtcars Data",
+        xlab="X",
+        ylab="Y",
+        col="red",
+        border="blue",
+        ylim=c(0,250),
+        varwidth = T,
+        notch = T)
+
+
+boxplot(mpg~cyl,data=mtcars,
+        xlab="Quantity of Cylinder",
+        ylab="Miles Per Gallon",
+        main="R Boxplot Example",
+        col=rainbow(length(mpg)),
+        border="red",
+        notch=T,
+        horizontal=T)
+
+
+
+boxplot(mpg~cyl,data=mtcars,
+        xlab="Quantity of Cylinder",
+        ylab="Miles Per Gallon",
+        main="R Boxplot Example",
+        notch=T,
+        col=c("green","blue","red"),
+        names=c("High","Median","Low")
+        )
